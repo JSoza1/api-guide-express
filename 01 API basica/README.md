@@ -1,6 +1,6 @@
 # 🌐 01 – API Básica
 
-Este proyecto representa el **primer paso práctico** del repositorio **API Guide Node.js**.  
+Este proyecto representa el **primer paso práctico** del repositorio **API Guide Express**.  
 Se crea una API mínima utilizando **Node.js y Express**.
 
 ---
