@@ -11,6 +11,78 @@ Una **API (Application Programming Interface)** es un conjunto de rutas (endpoin
 - Una API **devuelve datos**, normalmente en formato **JSON**
 - Es consumida por frontends, apps móviles u otros servidores
 
+## 📌 ¿Qué es una API REST?
+
+Una API REST (Representational State Transfer) es un tipo de API que sigue un conjunto de principios y convenciones para organizar la comunicación entre cliente y servidor.
+
+No es una tecnología ni un framework, sino una forma de diseñar APIs.
+
+## 📌 ¿Qué vuelve REST a una API?
+
+Una API se considera REST cuando cumple principalmente con las siguientes características:
+
+### 1️⃣ Uso de métodos HTTP correctamente
+
+Cada acción se representa con un método HTTP
+
+- GET → obtener datos
+- POST → crear datos
+- PUT / PATCH → actualizar datos
+- DELETE → eliminar datos
+
+Ejemplo:
+
+```bash
+GET /usuarios
+POST /usuarios
+PUT /usuarios/1
+DELETE /usuarios/1
+```
+
+### 2️⃣ Uso de recursos (no acciones)
+
+Las rutas representan recursos, no verbos
+
+❌ Incorrecto:
+
+```bash
+GET /obtenerUsuarios
+```
+
+✅ Correcto (REST):
+
+```bash
+GET /usuarios
+```
+
+### 3️⃣ Comunicación sin estado (Stateless)
+
+Cada request contiene toda la información necesaria para ser procesada.
+
+- El servidor no recuerda requests anteriores
+- Cada llamada es independiente
+
+### 4️⃣ Uso de códigos de estado HTTP
+
+Las respuestas indican el resultado usando status codes:
+
+- `200` OK
+- `201` Created
+- `400` Bad Request
+- `404` Not Found
+- `500` Internal Server Error
+
+### 5️⃣ Respuestas en formato estándar (JSON)
+
+Los datos se envían y reciben en formatos entendibles por múltiples lenguajes, normalmente JSON.
+
+```json
+{
+  "id": 1,
+  "nombre": "Juan"
+}
+```
+
 ---
 
 ## 🧠 Conceptos clave que se practican
