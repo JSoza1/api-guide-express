@@ -132,8 +132,8 @@ Antes de ejecutar cualquier proyecto, es necesario tener instalado:
 - **Node.js** (incluye npm)  
   👉 https://nodejs.org/
 
-- **Editor de código** (recomendado)  
-  👉 Visual Studio Code: https://code.visualstudio.com/
+- **Visual Studio Code** (editor de código)  
+  👉 https://code.visualstudio.com/
 
 - **Postman** (opcional, para probar las API)  
   👉 https://www.postman.com/
