@@ -1,0 +1,16 @@
+{
+  "name": "3",
+  "version": "1.0.0",
+  "description": "Este proyecto corresponde a la **tercera etapa** del repositorio **API Guide Express**.  \r El objetivo es **implementar un CRUD completo**, utilizando **Node.js y Express**, trabajando con **datos en memoria**, sin base de datos.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
