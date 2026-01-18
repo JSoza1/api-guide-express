@@ -1,0 +1,19 @@
+{
+    "name": "api-guide-step-4",
+    "version": "1.0.0",
+    "description": "API con Base de Datos",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "node --watch index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "pg": "^8.13.1"
+    }
+}
