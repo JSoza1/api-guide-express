@@ -1,6 +1,7 @@
 {
   "name": "2",
   "version": "1.0.0",
+  "description": "API con rutas",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -9,7 +10,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "express": "^5.2.1"
   }
