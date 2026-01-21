@@ -27,15 +27,23 @@ Cada acción se representa con un método HTTP
 
 - GET → obtener datos
 - POST → crear datos
-- PUT / PATCH → actualizar datos
+- PUT → reemplazar un recurso completo (Update total)
+- PATCH → actualizar parcialmente un recurso (Update parcial)
 - DELETE → eliminar datos
+
+> **Diferencia entre PUT y PATCH:**
+> - **PUT** teóricamente reemplaza TODO el recurso. Si faltan datos, los borra o los deja nulos.
+> - **PATCH** solo modifica los campos enviados, manteniendo el resto igual.
+>
+> *Nota: Aunque la definición estricta establece esta diferencia, en la implementación real el comportamiento depende del código. Es posible programar un PUT para que realice actualizaciones parciales (como un PATCH) y no elimine los datos faltantes.
 
 Ejemplo:
 
 ```bash
 GET /usuarios
 POST /usuarios
-PUT /usuarios/1
+PUT /usuarios/1   # Reemplaza todo el usuario 1
+PATCH /usuarios/1 # Modifica campos específicos del usuario 1
 DELETE /usuarios/1
 ```
 
